@@ -1,0 +1,103 @@
+/* Default styles */
+
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /* border: 2px solid red; */
+}
+
+body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #ccc;
+}
+
+h1 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+}
+
+.timer {
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 20px;
+}
+
+.controls {
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+}
+
+button {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+}
+
+button:hover {
+        background-color: #0062cc;
+}
+
+input[type="number"] {
+        width: 60px;
+        font-size: 16px;
+        padding: 10px;
+        margin: 0 10px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+}
+
+input[type="number"]:focus {
+        outline: none;
+        border-color: #007bff;
+}
+
+.set-timer {
+        margin-left: 10px;
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 1080px) {
+        h1 {
+                font-size: 24px;
+                margin-top: 20px;
+                margin-bottom: 5px;
+        }
+
+        .timer {
+                font-size: 40px;
+                margin-bottom: 10px;
+        }
+
+        .controls {
+                flex-direction: column;
+                margin-bottom: 20px;
+        }
+
+        button {
+                font-size: 14px;
+                padding: 8px 16px;
+                margin: 5px;
+        }
+
+        input[type="number"] {
+                width: 50px;
+                font-size: 14px;
+                padding: 8px;
+                margin: 5px;
+        }
+
+        .set-timer {
+                margin-left: 0;
+                margin-top: 5px;
+        }
+}

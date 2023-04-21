@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Stopwatch & Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/imgs/stopwatch.png" type="image/x-icon">
+</head>
+<body>
+  <h1>Stopwatch</h1>
+  <div class="timer" id="stopwatchDisplay">00:00:00</div>
+  
+  <div class="controls">
+    <button id="startStopwatch">Start</button>
+    <button id="stopStopwatch">Stop</button>
+    <button id="resetStopwatch">Reset</button>
+  </div>
+
+  <h1>Countdown Timer</h1>
+  <div class="timer" id="countdownDisplay">00:00:00</div>
+
+  <div class="input-fields">
+    <input type="number" id="countdownHours" placeholder="HH" min="0" max="23">
+    <input type="number" id="countdownMinutes" placeholder="MM" min="0" max="59">
+    <input type="number" id="countdownSeconds" placeholder="SS" min="0" max="59">
+    <button id="setCountdownTimer" class="set-timer">Set Timer</button>
+  </div>
+
+  <div class="controls">
+    <button id="startCountdownTimer">Start</button>
+    <button id="stopCountdownTimer">Stop</button>
+    <button id="resetCountdownTimer">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
